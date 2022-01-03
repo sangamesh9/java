@@ -3,9 +3,10 @@ pipeline {
 			stages {
 				stage('BUILD') {
 					steps {
-						sh 
+						sh '''
 							#!/bin/bash 
-							'echo "This is a fist build stage in Jenkinsfile"'
+							echo "This is a fist build stage in Jenkinsfile"
+							'''
 					}
 				}
 				stage('Test1') {
